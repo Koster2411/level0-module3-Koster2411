@@ -1,5 +1,6 @@
 import random
 import turtle
+from tkinter import messagebox, simpledialog, Tk
 from tkinter import simpledialog
 
 
@@ -24,6 +25,15 @@ if __name__ == '__main__':
     #      6) If the user doesn't enter anything, choose a random color
     #      7) Put a loop around your code so that you keep asking the user for
     #         more colors & drawing them
+    turtle_ = turtle.Turtle()
+
+    turtle_.penup()
+    turtle_.goto(-200, 200)
+    turtle_.pendown()
+    turtle_.pensize(10)
+    for i in range(4):
+        turtle_.forward(500)
+        turtle_.right(90)
 
     # ===================== DO NOT EDIT THE CODE BELOW ============================
     turtle.done()
